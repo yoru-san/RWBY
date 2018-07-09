@@ -1,2 +1,14 @@
+
 <h1>Posts#create</h1>
 <p>Find me in app/views/posts/create.html.erb</p>
+
+
+<label>Titre du post :</label>
+<input type="text" name="title" id="title">
+<textarea id="froala-editor" name="content"></textarea>
+
+<script>
+    $(function() {
+      $('textarea#froala-editor').froalaEditor()
+    });
+  </script>
