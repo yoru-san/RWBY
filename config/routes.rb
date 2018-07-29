@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get "connexion" => 'connection#connect'
 
   get "posts/add" => 'posts#create'
+  post "posts/add" => 'posts#create'
+
 
   get "post/:id" => 'posts#show'
 
