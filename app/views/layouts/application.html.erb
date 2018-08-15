@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>RWBY</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>RWBY</title>
+  <%= csrf_meta_tags %>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
+<body>
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/presentation">Présentation</a>
+    <a class="navbar-brand" href="#">Céline BERTAUD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/presentation">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/entreprise">L'entreprise</a>
+        </li>
+      </ul>
+      
+      <ul class="navbar-nav">
+        <a class="nav-link" href="/connexion">Administration</a>
       </li>
     </ul>
+  </nav>
+  <div class="container body-rendering">
+    <%= yield %>
   </div>
-</nav>
-<div class="container-fluid body-rendering">
-  <%= yield %>
-</div>
-  </body>
+</body>
 </html>

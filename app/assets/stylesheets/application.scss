@@ -1,5 +1,7 @@
  @import "froala_editor.min";
  @import "froala_style.min";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
  
  @import "bootstrap";
 
@@ -7,6 +9,29 @@ nav {
     background: #564d65;
 }
 
-.body-rendering {
+body {
     background: #f3f4f9;
+}
+
+.body-rendering {
+    background: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+
+}
+
+.text-content {
+    text-align: center;
+    font-size: 20px;
+}
+
+.title-content {
+    font-size: 3em;
+
+    &#presentation {
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+    }
 }
