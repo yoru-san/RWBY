@@ -1,6 +1,7 @@
 <h1>Site en construction</h1>
 
 <% @posts.each do |post| %>
-<h2><%= post.title %></h2>
+<a href="/post/"> truc</a>
+
 <p><%= truncate(strip_tags(post.content), length: 300) %></p>
 <% end %> 
