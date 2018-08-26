@@ -4,8 +4,8 @@
  @import "font-awesome";
  
  @import "bootstrap";
-
-nav {
+ 
+ nav {
     background: #009f3a;
 }
 
@@ -18,7 +18,7 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
-
+    
 }
 
 .text-content {
@@ -28,11 +28,11 @@ body {
 
 .title-content {
     font-size: 3em;
-
+    
     &#presentation {
         padding-bottom: 20px;
         padding-top: 20px;
-
+        
     }
 }
 
@@ -40,7 +40,7 @@ body {
     color: #fb4b47;
     margin-bottom: 30px;
     padding-top: 20px;
-
+    
 }
 
 .link-title {
@@ -49,7 +49,7 @@ body {
     }
     margin-bottom: 15px;
     padding-top: 15px;
-
+    
 }
 
 .post-summary {
@@ -58,4 +58,11 @@ body {
 
 #major-title {
     padding-top: 15px;
+}
+
+#contact {
+    a { 
+        color: #fb4b47;
+        
+    }
 }
