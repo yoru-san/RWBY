@@ -16,5 +16,3 @@ Comment.create(
     user: "User1",
     content: "Premier commentaire !"
 )
-
-Truc.create(name: "blablz")

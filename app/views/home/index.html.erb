@@ -1,7 +1,6 @@
-<h1>Site en construction</h1>
+<h1 id="major-title">Blog de stage de Céline BERTAUD</h1>
 
 <% @posts.each do |post| %>
-<a href="/post/"> truc</a>
-
-<p><%= truncate(strip_tags(post.content), length: 300) %></p>
+<h2 class="link-title"><%= link_to post.title, posts_show_path(post) %></h2>
+<p class="post-summary"><%= truncate(strip_tags(post.content), length: 300) %></p>
 <% end %> 

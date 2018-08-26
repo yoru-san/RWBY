@@ -15,6 +15,6 @@ Rails.application.routes.draw do
   post "posts/add" => 'posts#create'
 
 
-  get "post/:id" => 'posts#show'
+  get "post/:id", to: 'posts#show', as: 'posts_show'
 
 end

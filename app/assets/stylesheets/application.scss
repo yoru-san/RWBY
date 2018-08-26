@@ -6,7 +6,7 @@
  @import "bootstrap";
 
 nav {
-    background: #564d65;
+    background: #009f3a;
 }
 
 body {
@@ -34,4 +34,28 @@ body {
         padding-top: 20px;
 
     }
+}
+
+.post-title {
+    color: #fb4b47;
+    margin-bottom: 30px;
+    padding-top: 20px;
+
+}
+
+.link-title {
+    a {
+        color: #fb4b47;
+    }
+    margin-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+.post-summary {
+    font-size: 18px;
+}
+
+#major-title {
+    padding-top: 15px;
 }
