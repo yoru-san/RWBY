@@ -49,6 +49,4 @@ test:
 #
 production:
   <<: *default
-  database: RWBY_production
-  username: RWBY
-  password: <%= ENV['RWBY_DATABASE_PASSWORD'] %>
+  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
